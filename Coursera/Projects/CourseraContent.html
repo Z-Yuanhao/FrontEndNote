@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coursera Course Content</title>
+</head>
+
+<body>
+  <script id="__bs_script__">//<![CDATA[
+    (function () {
+      try {
+        var script = document.createElement('script');
+        if ('async') {
+          script.async = true;
+        }
+        script.src = 'http://HOST:3000/browser-sync/browser-sync-client.js?v=2.29.3'.replace("HOST", location.hostname);
+        if (document.body) {
+          document.body.appendChild(script);
+        } else if (document.head) {
+          document.head.appendChild(script);
+        }
+      } catch (e) {
+        console.error("Browsersync: could not append script tag", e);
+      }
+    })()
+    //]]></script>
+  <div>
+    <h1 id="TOP">Week 1</h1>
+    HTML stands for HyperText Markup Language.
+    <h3 id="HyperText">HyperText</h3>
+    Basically just text that links to other text
+    <h3 id="Markup Language">Markup Language</h3>
+    Language wrapped around the content that tells the computer about the nature of the content.
+    <h3 id="HTML, CSS, JS">HTML, CSS, JAVASCRIPT</h3>
+    Each file provide respectively the Structure, the Style and the Behavior(functions) of the website.
+    <br>Notice: because of the nature of HTML, everything in it serves the purpose of structuring, inlcuding the the
+    heading tags.
+    <h3 id="Bit of history">Bit of history</h3>
+    Real origin of the current HTML:5 :WHATWG:HTML + W3C:XML
+    <p>WHATWG constantly improves HTML, while W3C decides which of the improvements will become
+      the official standards(HTML5)
+      <a href="https://caniuse.com/" target="_blank"> A link to check which browsers has adopted an attribute </a>
+    </p>
+    <h3 id="Tags">Tags</h3>
+    <ul>
+      <li> The !DOCTYPE html at the top of the html file is a declaration exclusive to HTML5. Without it, the browser
+        enter quirks mode.</li>
+      <li> Like the Doctype tag, the title tag is also essential.</li>
+      <li> The viewport is refering to the body tag.</li>
+      <li> Something to remember: Html renders from top to bottom, sequentially.</li>
+      <li> Meta tags communicate information to the browser. </li>
+      <li> Div is a block element, hence even if it is followed by a span element, the div will push the span to a new
+        line.
+        Also the reason why you can't have a div inside span. The same goes for p element...
+      <li> Pragraph tag, header and heading tags aswell as footer tags are all block level elements. The main reason of
+        specifying instead of using div everywhere is to structurize the codes. Those are called semantic elements</li>
+      </li>
+    </ul>
+    <h3 id="Lists">Lists</h3>
+    Ordered(ol) and unordered(ul) lists with list item(li). Within a list, there can only be list items. It is posible
+    to have a list within a list item.
+    <h3>Character Entity</h3>
+    <p>Serves the purpose of preventing redering issues, basically replacing a special character with some other one.
+    </p>
+    Characters to avoid: &lt;, &gt; and &amp; as they can cause confusion when interpreted by the computer. Instead, use
+    & lt , & gt and & amp(withouth the space inbetween) respectively to represent those characters.
+    A special one to remember is the copyright symbol &copy;, denoted by & copy.
+    <p>
+      Let's say I want some words to always stay on the same line, replace the space between the desired words with
+      entity & nbsp which stands for None Breaking Space
+    </p>
+    <h3 id="Links">Links</h3>
+    The a tag creats a hyperlink(href = hypertext reference) to either an internal or external link. For external links,
+    it's suggested to add a target=_blank inside the starting tag so when the link is clicked, it appears in a new
+    window.
+    <p>The a element is both inline and block at the same time. This allows the a tag to have a div within it, meaning
+      one is not obliged to click on the text but rather in the surrounding region to access the link.</p>
+    <p>Another feature of this element is to navigate within the same page. First an Id must be assigned to the
+      designated sections, then creat a list in the following format:
+      &lt;li&gt;&nbsp;&lt;a&nbsp;href="#designated&nbsp;section"&gt;#Designated&nbsp;Section&lt;/a&gt;&lt;/li&gt; *Of
+      course, it doesn't necessarily have to be a list, any blcok element would work. </p>
+    <div>
+      <h4>Example:<a href="#TOP">Back to top</a></h4>
+    </div>
+    <p>This feature(fragment identifier) changes the URl, hence it could be used as a bookmark when sending to someone. It brings them right to the designated section.</p>
+    <h3>To Make a Comment in HTML</h3>
+    Use the format &lt;&excl;-- --&gt;
+    <h3>Displayin</h3>
+  </div>
+</body>
+
+</html>
